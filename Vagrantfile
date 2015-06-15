@@ -43,23 +43,23 @@ Vagrant.configure("2") do |config|
     :inline => "cp -rf /vagrant/install /home/vagrant/"
   )
 
-  config.vm.provision(
-    :shell,
-    :inline => "chmod +x /home/vagrant/install/cdh4/install.sh"
-  )
-  config.vm.provision(
-    :shell,
-    :inline => "/home/vagrant/install/cdh4/install.sh"
-  )
+  # config.vm.provision(
+  #   :shell,
+  #   :inline => "chmod +x /home/vagrant/install/cdh4/install.sh"
+  # )
+  # config.vm.provision(
+  #   :shell,
+  #   :inline => "/home/vagrant/install/cdh4/install.sh"
+  # )
 
-  # config.vm.provision(
-  #   :shell,
-  #   :inline => "chmod +x /home/vagrant/install/cdh5/install.sh"
-  # )
-  # config.vm.provision(
-  #   :shell,
-  #   :inline => "/home/vagrant/install/cdh5/install.sh"
-  # )
+  config.vm.provision(
+    :shell,
+    :inline => "chmod +x /home/vagrant/install/cdh5/install.sh"
+  )
+  config.vm.provision(
+    :shell,
+    :inline => "/home/vagrant/install/cdh5/install.sh"
+  )
 
   config.vm.provision(
     :shell,
